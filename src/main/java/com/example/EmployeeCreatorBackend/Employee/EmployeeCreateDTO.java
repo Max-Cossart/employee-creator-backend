@@ -1,5 +1,7 @@
 package com.example.EmployeeCreatorBackend.Employee;
 
+import java.util.Date;
+
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
@@ -43,11 +45,11 @@ public class EmployeeCreateDTO {
     @Getter
     @Setter
     @NotBlank
-    private String startDate;
+    private Date startDate;
 
     @Getter
     @Setter
-    private String finishDate;
+    private Date finishDate;
 
     @Getter
     @Setter

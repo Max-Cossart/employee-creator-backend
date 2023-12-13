@@ -1,5 +1,7 @@
 package com.example.EmployeeCreatorBackend.Employee;
 
+import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -56,12 +58,12 @@ public class Employee {
     @Getter
     @Setter
     @Column
-    private String startDate;
+    private Date startDate;
 
     @Getter
     @Setter
     @Column
-    private String finishDate;
+    private Date finishDate;
 
     @Getter
     @Setter
@@ -89,8 +91,8 @@ public class Employee {
             String mobile,
             String address,
             String status,
-            String startDate,
-            String finishDate,
+            Date startDate,
+            Date finishDate,
             Boolean onGoing,
             String type,
             String hours) {
