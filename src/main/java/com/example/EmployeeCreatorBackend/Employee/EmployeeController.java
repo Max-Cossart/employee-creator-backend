@@ -32,7 +32,7 @@ public class EmployeeController {
         return new ResponseEntity<>(allEmployees, HttpStatus.OK);
     }
 
-    @PostMapping("/new")
+    @PostMapping()
     public ResponseEntity<Employee> createEmployee(@RequestBody EmployeeCreateDTO data) {
         Employee newEmployee = this.employeeService.createEmployee(data);
         return new ResponseEntity<>(newEmployee, HttpStatus.CREATED);
